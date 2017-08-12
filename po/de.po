@@ -1,5 +1,58 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-12 22:31+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: ../src/MainWindow.vala:113
+msgid "Hash It"
+msgstr "Hash It"
+
+#: ../src/MainWindow.vala:121
+msgid "(optional) paste a reference hash here…"
+msgstr "(optional) füge hier einen Referenz-Hash ein…"
+
+#: ../src/MainWindow.vala:130
+msgid "Get Hash"
+msgstr "Hash berechnen"
+
+#: ../src/MainWindow.vala:152
+msgid "File"
+msgstr "Datei"
+
+#: ../src/MainWindow.vala:164 ../src/MainWindow.vala:239
+msgid "Open a file"
+msgstr "Datei öffnen"
+
+#: ../src/MainWindow.vala:178
+msgid "Algorythm"
+msgstr "Algorythm"
+
+#: ../src/MainWindow.vala:190 ../src/MainWindow.vala:242
+msgid "Change"
+msgstr "Ändern"
+
+#: ../src/MainWindow.vala:238
+msgid "Choose a file…"
+msgstr "Datei auswählen…"
+
+#: ../src/MainWindow.vala:248
+msgid "Open"
+msgstr "Öffnen"
+
+#: ../src/MainWindow.vala:250
+msgid "_Cancel"
+msgstr "_Abbrechen"
+
+#: ../src/MainWindow.vala:251
+msgid "_Open"
+msgstr "_Öffnen"

@@ -235,7 +235,7 @@ namespace HashIt {
 
         private void set_file_path_label (string text) {
             if (text == "") {
-                file_path.label = _("<i>Choose a file…</i>");
+                file_path.label = ("<i>%s</i>").printf(_("Choose a file…"));
                 open_file.label = _("Open a file");
             } else {
                 file_path.label = text;
