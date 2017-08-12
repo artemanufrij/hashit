@@ -117,6 +117,7 @@ namespace HashIt {
             headerbar.pack_end (hash_waiting);
 
             reference_hash = new Gtk.Entry ();
+            reference_hash.xalign = 0.5f;
             reference_hash.placeholder_text = _("(optional) paste a reference hash here…");
             reference_hash.changed.connect (() => {
                  check_equal ();
@@ -124,7 +125,7 @@ namespace HashIt {
 
             hash_result = new Gtk.Label ("");
             hash_result.use_markup = true;
-            hash_result.halign = Gtk.Align.START;
+            hash_result.xalign = 0.5f;
 
             start_hash = new Gtk.Button.with_label (_("Get Hash"));
             start_hash.get_style_context ().add_class(Gtk.STYLE_CLASS_SUGGESTED_ACTION);

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Hash It
+GenericName=Hash It
+Comment=Print or check usual checksums
+Keywords=hash;checksum;md5;sha256;
+Exec=com.github.artemanufrij.hashit %u
+Icon=artemanufrij.hashit
+Terminal=false
+Type=Application
+Categories=Utility;GNOME;GTK;
+X-GNOME-Gettext-Domain=com.github.artemanufrij.hashit
