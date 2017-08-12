@@ -32,14 +32,15 @@ namespace HashIt {
         public signal void calculate_begin ();
         public signal void calculate_finished (string result);
 
+        Gtk.Grid content;
         Gtk.Label file_path;
         Gtk.Label hash_result;
+        Gtk.Label alg_name;
         Gtk.Button start_hash;
         Gtk.Button open_file;
         Gtk.Entry reference_hash;
         Gtk.Spinner hash_waiting;
-
-        Gtk.ComboBoxText hash_chooser;
+        Gtk.Popover hash_popover;
 
         File _selected_file = null;
         public File selected_file {
@@ -52,7 +53,7 @@ namespace HashIt {
 
                 if (selected_file != null) {
                     start_hash.sensitive = true;
-                    this.set_file_path_label (selected_file.get_path ());
+                    this.set_file_path_label (selected_file.get_basename ());
                 } else {
                     start_hash.sensitive = false;
                     this.set_file_path_label ("");
@@ -60,25 +61,36 @@ namespace HashIt {
             }
         }
 
+        Algorythm _selected_algorythm = null;
+        public Algorythm selected_algorythm {
+            get {
+                return _selected_algorythm;
+            }
+            set {
+                _selected_algorythm = value;
+                alg_name.label = selected_algorythm.title;
+            }
+        }
+
         public MainWindow () {
             this.resizable = false;
+            this.width_request = 700;
 
             build_ui ();
 
             calculate_begin.connect (() => {
                 hash_waiting.active = true;
                 start_hash.sensitive = false;
-                hash_chooser.sensitive = false;
                 open_file.sensitive = false;
+                hash_result.visible = false;
             });
 
             calculate_finished.connect ((result) => {
                 hash_result.label = result;
                 hash_waiting.active = false;
                 start_hash.sensitive = true;
-                hash_chooser.sensitive = true;
                 open_file.sensitive = true;
-
+                hash_result.visible = true;
                 check_equal ();
             });
 
@@ -86,47 +98,29 @@ namespace HashIt {
         }
 
         private void build_ui () {
+            content = new Gtk.Grid ();
+            content.margin = 32;
+            content.column_spacing = 32;
+            content.row_spacing = 24;
+            content.column_homogeneous = true;
+
+            build_file_area ();
+
+            build_algorythm_area ();
 
             var headerbar = new Gtk.HeaderBar ();
             headerbar.show_close_button = true;
             headerbar.title = _("Hash It");
             this.set_titlebar (headerbar);
 
-            this.width_request = 660;
-
-            var content = new Gtk.Grid ();
-            content.margin = 12;
-            content.column_spacing = 12;
-            content.row_spacing = 12;
-
-            file_path = new Gtk.Label ("");
-            file_path.halign = Gtk.Align.START;
-            file_path.use_markup = true;
-            file_path.expand = true;
-            set_file_path_label ("");
-
-            open_file = new Gtk.Button.from_icon_name ("document-open", Gtk.IconSize.LARGE_TOOLBAR);
-            open_file.tooltip_text = _("Open a file");
-            open_file.halign = Gtk.Align.END;
-            open_file.clicked.connect (() => {
-                select_image ();
-            });
-            headerbar.pack_start (open_file);
+            hash_waiting = new Gtk.Spinner ();
+            headerbar.pack_end (hash_waiting);
 
             reference_hash = new Gtk.Entry ();
-            reference_hash.placeholder_text = _("Paste a reference hash here…");
+            reference_hash.placeholder_text = _("(optional) paste a reference hash here…");
             reference_hash.changed.connect (() => {
                  check_equal ();
             });
-
-            hash_chooser = new Gtk.ComboBoxText ();
-            hash_chooser.append ("md5sum", "MD5");
-            hash_chooser.append ("sha256sum", "SHA256");
-            hash_chooser.append ("sha1sum", "SHA1");
-            hash_chooser.active = 1;
-            hash_chooser.hexpand = true;
-            hash_chooser.halign = Gtk.Align.END;
-            hash_chooser.tooltip_text = _("Choose an algorithm");
 
             hash_result = new Gtk.Label ("");
             hash_result.use_markup = true;
@@ -140,18 +134,87 @@ namespace HashIt {
                 calculate.begin ();
             });
 
-            hash_waiting = new Gtk.Spinner ();
-            headerbar.pack_end (hash_waiting);
-
-            content.attach (file_path, 0, 0, 3, 1);
-            content.attach (reference_hash, 0, 1, 3, 1);
-            content.attach (hash_result, 0, 2, 3, 1);
-            content.attach (hash_chooser, 1, 3);
-            content.attach (start_hash, 2, 3);
+            content.attach (reference_hash, 0, 1, 2, 1);
+            content.attach (hash_result, 0, 2, 2, 1);
+            content.attach (start_hash, 1, 3);
 
             this.add (content);
             this.show_all ();
             open_file.grab_focus ();
+            hash_result.visible = false;
+        }
+
+        private void build_file_area () {
+            var grid = new Gtk.Grid ();
+            grid.row_spacing = 24;
+
+            var title = new Gtk.Label (_("File"));
+            title.get_style_context ().add_class("h2");
+            title.hexpand = true;
+            grid.attach (title, 0, 0);
+
+            var logo = new Gtk.Image.from_icon_name ("document-open", Gtk.IconSize.DIALOG);
+            grid.attach (logo, 0, 1);
+
+            file_path = new Gtk.Label ("");
+            file_path.use_markup = true;
+            grid.attach (file_path, 0, 2);
+
+            open_file = new Gtk.Button.with_label (_("Open a file"));
+            open_file.clicked.connect (() => {
+                open_file_dialog ();
+            });
+            grid.attach (open_file, 0, 3);
+
+            set_file_path_label ("");
+            content.attach (grid, 0, 0);
+        }
+
+        private void build_algorythm_area () {
+            var grid = new Gtk.Grid ();
+            grid.row_spacing = 24;
+
+            var title = new Gtk.Label (_("Algorythm"));
+            title.get_style_context ().add_class("h2");
+            title.hexpand = true;
+            grid.attach (title, 0, 0);
+
+            var logo = new Gtk.Image.from_icon_name ("open-menu", Gtk.IconSize.DIALOG);
+            grid.attach (logo, 0, 1);
+
+            alg_name = new Gtk.Label ("");
+            alg_name.use_markup = true;
+            grid.attach (alg_name, 0, 2);
+
+            var select_algorythm = new Gtk.Button.with_label (_("Change"));
+            select_algorythm.clicked.connect (() => {
+                hash_popover.visible = !hash_popover.visible;
+            });
+            grid.attach (select_algorythm, 0, 3);
+
+            var alg_list = new Gtk.FlowBox ();
+            alg_list.add (new Algorythm ("MD5", "md5sum"));
+            alg_list.add (new Algorythm ("SHA256", "sha256sum"));
+            alg_list.add (new Algorythm ("SHA1", "sha1sum"));
+            alg_list.child_activated.connect (algorythm_selected);
+            alg_list.show_all ();
+            alg_list.get_child_at_index (1).activate ();
+
+            hash_popover = new Gtk.Popover (select_algorythm);
+            hash_popover.position = Gtk.PositionType.TOP;
+            hash_popover.add (alg_list);
+            hash_popover.show.connect (() => {
+                if (selected_algorythm != null) {
+                    alg_list.select_child (selected_algorythm);
+                }
+                select_algorythm.grab_focus ();
+            });
+
+            content.attach (grid, 1, 0);
+        }
+
+        private void algorythm_selected (Gtk.FlowBoxChild item) {
+            this.selected_algorythm = (Algorythm) item;
         }
 
         private void check_equal () {
@@ -172,12 +235,14 @@ namespace HashIt {
         private void set_file_path_label (string text) {
             if (text == "") {
                 file_path.label = _("<i>Choose a file…</i>");
+                open_file.label = _("Open a file");
             } else {
                 file_path.label = text;
+                open_file.label = _("Change");
             }
         }
 
-        private void select_image () {
+        private void open_file_dialog () {
             var file = new Gtk.FileChooserDialog (
                 _("Open"), this,
                 Gtk.FileChooserAction.OPEN,
@@ -194,7 +259,7 @@ namespace HashIt {
 
         private async void calculate () {
             calculate_begin ();
-            string hash = hash_chooser.active_id;
+            string hash = selected_algorythm.command;
             string path = selected_file.get_path ();
             debug (hash);
             debug (path);
@@ -204,8 +269,7 @@ namespace HashIt {
                 Pid child_pid;
                 int standard_output;
 
-                Process.spawn_async_with_pipes ("/",
-                spawn_args, null,
+                Process.spawn_async_with_pipes ("/", spawn_args, null,
                 SpawnFlags.SEARCH_PATH | SpawnFlags.DO_NOT_REAP_CHILD,
                 null, out child_pid, null, out standard_output, null);
 

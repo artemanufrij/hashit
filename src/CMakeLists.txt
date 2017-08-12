@@ -1,4 +1,5 @@
 vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
+    Widgets/Algorythm.vala
     MainWindow.vala
     Application.vala
 PACKAGES
