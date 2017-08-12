@@ -25,16 +25,16 @@
  * Authored by: Artem Anufrij <artem.anufrij@live.de>
  */
 
-namespace HashMe {
+namespace HashIt {
 
-    public class HashMeApp : Granite.Application {
+    public class HashItApp : Granite.Application {
 
-        static HashMeApp _instance = null;
+        static HashItApp _instance = null;
 
-        public static HashMeApp instance {
+        public static HashItApp instance {
             get {
                 if (_instance == null)
-                    _instance = new HashMeApp ();
+                    _instance = new HashItApp ();
                 return _instance;
             }
         }
@@ -62,6 +62,6 @@ namespace HashMe {
 
 public static int main (string [] args) {
     Gtk.init (ref args);
-    var app = HashMe.HashMeApp.instance;
+    var app = HashIt.HashItApp.instance;
     return app.run (args);
 }

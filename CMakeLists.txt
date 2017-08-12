@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 2.8)
 cmake_policy (VERSION 2.8)
 
-project (com.github.artemanufrij.hashme)
+project (com.github.artemanufrij.hashit)
 include (GNUInstallDirs)
 set (DATADIR "${CMAKE_INSTALL_FULL_DATAROOTDIR}")
 set (PKGDATADIR "${DATADIR}/${CMAKE_PROJECT_NAME}")
