@@ -51,7 +51,7 @@ namespace HashIt {
 
                 if (selected_file != null) {
                     this.set_file_path_label (selected_file.get_basename ());
-                    calculate.begin ();
+                    get_checksum.begin ();
                 } else {
                     this.set_file_path_label ("");
                 }
@@ -101,13 +101,15 @@ namespace HashIt {
             headerbar.pack_start (open_file);
 
             hash_chooser = new Gtk.ComboBoxText ();
-            hash_chooser.append ("md5sum", "MD5");
-            hash_chooser.append ("sha256sum", "SHA256");
-            hash_chooser.append ("sha1sum", "SHA1");
+            hash_chooser.append ("MD5", "MD5");
+            hash_chooser.append ("SHA256", "SHA256");
+            hash_chooser.append ("SHA1", "SHA1");
             hash_chooser.active = 1;
             hash_chooser.tooltip_text = _("Choose an algorithm");
             hash_chooser.changed.connect (() => {
-                calculate.begin ();
+                if (selected_file != null) {
+                    get_checksum.begin ();
+                }
             });
             headerbar.pack_end (hash_chooser);
 
@@ -167,65 +169,53 @@ namespace HashIt {
             file.destroy();
         }
 
-        private async void calculate () {
+        private async void get_checksum () {
             calculate_begin ();
-            string hash = hash_chooser.active_id;
-            string path = selected_file.get_path ();
-            debug (hash);
-            debug (path);
-
-            try {
-                string[] spawn_args = {hash, path};
-                Pid child_pid;
-                int standard_output;
-
-                Process.spawn_async_with_pipes ("/", spawn_args, null,
-                SpawnFlags.SEARCH_PATH | SpawnFlags.DO_NOT_REAP_CHILD,
-                null, out child_pid, null, out standard_output, null);
-
-                // stdout:
-                IOChannel output = new IOChannel.unix_new (standard_output);
-                output.add_watch (IOCondition.IN | IOCondition.HUP, (channel, condition) => {
-                    return process_line (channel, condition);
-                });
-
-                ChildWatch.add (child_pid, (pid, status) => {
-                    Process.close_pid (pid);
-                });
-            } catch (SpawnError e) {
-                stdout.printf ("Error: %s\n", e.message);
-            }
+            checksum_thread.begin ((obj, res) => {
+                calculate_finished (checksum_thread.end (res));
+            });
         }
 
-        private bool process_line (IOChannel channel, IOCondition condition) {
-	        if (condition == IOCondition.HUP) {
-		        return false;
-	        }
+        private async string checksum_thread () {
+            SourceFunc callback = checksum_thread.callback;
+            ChecksumType checksumtype = ChecksumType.SHA256;
+            switch (hash_chooser.active_id) {
+                case "MD5":
+                    checksumtype = ChecksumType.MD5;
+                    break;
+                case "SHA1":
+                    checksumtype = ChecksumType.SHA1;
+                    break;
+                case "SHA256":
+                    checksumtype = ChecksumType.SHA256;
+                    break;
+                case "SHA512":
+                    checksumtype = ChecksumType.SHA512;
+                    break;
+            }
+            string digest = "";
 
-	        try {
-		        string line = "";
-		        channel.read_line (out line, null, null);
+            ThreadFunc<void*> run = () => {
+                Checksum checksum = new Checksum (checksumtype);
+	            FileStream stream = FileStream.open (selected_file.get_path (), "r");
+	            uint8 fbuf[100];
+	            size_t size;
 
-                GLib.Regex re = new GLib.Regex ("^(\\w)*");
-                MatchInfo mi;
-                string result = "";
-                if (re.match (line, 0 , out mi)) {
-                    result = mi.fetch (0);
-                    debug (result);
-                }
-                calculate_finished (result);
-            } catch (GLib.RegexError e) {
-                warning ("RegexError: %s\n", e.message);
-                calculate_finished ("");
-	        } catch (IOChannelError e) {
-		        warning ("IOChannelError: %s\n", e.message);
-		        return false;
-	        } catch (ConvertError e) {
-		        warning ("ConvertError: %s\n", e.message);
-		        return false;
-	        }
+	            while ((size = stream.read (fbuf)) > 0) {
+		            checksum.update (fbuf, size);
+	            }
+	            digest = checksum.get_string ();
+	            Idle.add ((owned) callback);
+	            return null;
+            };
+            try {
+                new Thread<void*>.try (null, run);
+            } catch (Error e) {
+                warning (e.message);
+            }
 
-	        return true;
+            yield;
+            return digest;
         }
     }
 }
