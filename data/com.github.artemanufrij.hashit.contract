@@ -1,6 +1,6 @@
-[Contractor Entry]  
+[Contractor Entry]
 Name=Show checksum
 Icon=artemanufrij.hashit
 Description=Shows checksum for a choosen file
-Exec=com.github.artemanufrij.hashit %u
+Exec=com.github.artemanufrij.hashit %U
 MimeType=application/x-raw-disk-image;application/x-cd-image;
