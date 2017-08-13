@@ -44,6 +44,7 @@ namespace HashIt {
             exec_name = "com.github.artemanufrij.hashme";
             application_id = "com.github.artemanufrij.hashme";
             app_launcher = application_id + ".desktop";
+            this.flags |= GLib.ApplicationFlags.HANDLES_OPEN;
         }
 
         Gtk.Window mainwindow;
@@ -56,6 +57,11 @@ namespace HashIt {
 
             mainwindow = new MainWindow ();
             mainwindow.set_application(this);
+        }
+
+        public override void open (File[] files, string hint) {
+            activate ();
+            (mainwindow as MainWindow).selected_file = files [0];
         }
     }
 }
