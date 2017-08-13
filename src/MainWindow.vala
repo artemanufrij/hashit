@@ -34,7 +34,6 @@ namespace HashIt {
 
         Gtk.Grid content;
         Gtk.Label hash_result;
-        Gtk.Button start_hash;
         Gtk.Button open_file;
         Gtk.ComboBoxText hash_chooser;
         Gtk.Entry reference_hash;
@@ -51,10 +50,9 @@ namespace HashIt {
                 hash_result.label = "";
 
                 if (selected_file != null) {
-                    start_hash.sensitive = true;
                     this.set_file_path_label (selected_file.get_basename ());
+                    calculate.begin ();
                 } else {
-                    start_hash.sensitive = false;
                     this.set_file_path_label ("");
                 }
             }
@@ -68,15 +66,15 @@ namespace HashIt {
 
             calculate_begin.connect (() => {
                 hash_waiting.active = true;
-                start_hash.sensitive = false;
+                hash_chooser.sensitive = false;
                 open_file.sensitive = false;
-                hash_result.label = ("<i>%s</i>").printf(_("Checksum will be calculate…"));
+                hash_result.label = ("<i>%s</i>").printf(_("Calculating checksum…"));
             });
 
             calculate_finished.connect ((result) => {
                 hash_result.label = result;
                 hash_waiting.active = false;
-                start_hash.sensitive = true;
+                hash_chooser.sensitive = true;
                 open_file.sensitive = true;
                 check_equal ();
             });
@@ -87,13 +85,12 @@ namespace HashIt {
         private void build_ui () {
             content = new Gtk.Grid ();
             content.margin = 12;
-            content.row_spacing = 24;
+            content.row_spacing = 12;
             content.column_homogeneous = true;
 
             headerbar = new Gtk.HeaderBar ();
             headerbar.show_close_button = true;
             headerbar.title = _("Hash It");
-            headerbar.has_subtitle = true;
             this.set_titlebar (headerbar);
 
             open_file = new Gtk.Button.from_icon_name ("document-open", Gtk.IconSize.LARGE_TOOLBAR);
@@ -108,9 +105,10 @@ namespace HashIt {
             hash_chooser.append ("sha256sum", "SHA256");
             hash_chooser.append ("sha1sum", "SHA1");
             hash_chooser.active = 1;
-            hash_chooser.hexpand = true;
-            hash_chooser.halign = Gtk.Align.END;
             hash_chooser.tooltip_text = _("Choose an algorithm");
+            hash_chooser.changed.connect (() => {
+                calculate.begin ();
+            });
             headerbar.pack_end (hash_chooser);
 
             hash_waiting = new Gtk.Spinner ();
@@ -127,17 +125,8 @@ namespace HashIt {
             hash_result.use_markup = true;
             hash_result.xalign = 0.5f;
 
-            start_hash = new Gtk.Button.with_label (_("Get Hash"));
-            start_hash.get_style_context ().add_class(Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-            start_hash.halign = Gtk.Align.END;
-            start_hash.sensitive = false;
-            start_hash.clicked.connect (() => {
-                calculate.begin ();
-            });
-
             content.attach (reference_hash, 0, 1);
-            content.attach (hash_result, 0, 2);
-            content.attach (start_hash, 0, 3);
+            content.attach (hash_result, 0, 0);
 
             this.add (content);
             this.show_all ();
@@ -160,10 +149,7 @@ namespace HashIt {
         }
 
         private void set_file_path_label (string text) {
-            headerbar.subtitle = text;
-            if (text != "" ) {
-                hash_result.label = _("Ready!");
-            }
+            headerbar.title = text;
         }
 
         private void open_file_dialog () {
