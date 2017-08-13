@@ -1,6 +1,6 @@
 # Hash It
 
-### A simple app for check usual checksums designed for [elementary OS](https://elementary.io)
+### A simple app for checking usual checksums designed for [elementary OS](https://elementary.io)
 
 ![screenshot](Screenshot.png)
 
