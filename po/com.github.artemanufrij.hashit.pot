@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-12 22:31+0200\n"
+"POT-Creation-Date: 2017-08-13 14:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,46 +17,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/MainWindow.vala:113
+#: ../src/MainWindow.vala:71
+msgid "Calculating checksum…"
+msgstr ""
+
+#: ../src/MainWindow.vala:93
 msgid "Hash It"
 msgstr ""
 
-#: ../src/MainWindow.vala:121
-msgid "(optional) paste a reference hash here…"
-msgstr ""
-
-#: ../src/MainWindow.vala:130
-msgid "Get Hash"
-msgstr ""
-
-#: ../src/MainWindow.vala:152
-msgid "File"
-msgstr ""
-
-#: ../src/MainWindow.vala:164 ../src/MainWindow.vala:239
+#: ../src/MainWindow.vala:97
 msgid "Open a file"
 msgstr ""
 
-#: ../src/MainWindow.vala:178
-msgid "Algorythm"
+#: ../src/MainWindow.vala:108
+msgid "Choose an algorithm"
 msgstr ""
 
-#: ../src/MainWindow.vala:190 ../src/MainWindow.vala:242
-msgid "Change"
+#: ../src/MainWindow.vala:119
+msgid "(optional) paste a reference hash here…"
 msgstr ""
 
-#: ../src/MainWindow.vala:238
+#: ../src/MainWindow.vala:124
 msgid "Choose a file…"
 msgstr ""
 
-#: ../src/MainWindow.vala:248
+#: ../src/MainWindow.vala:157
 msgid "Open"
 msgstr ""
 
-#: ../src/MainWindow.vala:250
+#: ../src/MainWindow.vala:159
 msgid "_Cancel"
 msgstr ""
 
-#: ../src/MainWindow.vala:251
+#: ../src/MainWindow.vala:160
 msgid "_Open"
 msgstr ""
