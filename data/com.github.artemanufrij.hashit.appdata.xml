@@ -7,7 +7,8 @@
     <name>Hash It</name>
     <summary>A simple app for check usual checksums</summary>
     <description>
-        <p>Check usual checksum of any files. Supported algorithms:</p>
+        <p>Check usual checksum of any files.</p>
+        <p>Supported algorithms:</p>
         <ul>
             <li>MD5</li>
             <li>SHA256</li>
