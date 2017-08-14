@@ -7,11 +7,12 @@
     <name>Hash It</name>
     <summary>A simple app for check usual checksums</summary>
     <description>
-        <p>Check usual checksum of any files. Supported algorithms:
-* MD5
-* SHA256
-* SHA1
-        </p>
+        <p>Check usual checksum of any files. Supported algorithms:</p>
+        <ul>
+            <li>MD5</li>
+            <li>SHA256</li>
+            <li>SHA1</li>
+        </ul>
     </description>
     <categories>
         <category>Utility</category>
