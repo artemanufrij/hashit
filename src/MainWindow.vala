@@ -39,6 +39,7 @@ namespace HashIt {
         Gtk.Entry reference_hash;
         Gtk.Spinner hash_waiting;
         Gtk.HeaderBar headerbar;
+        Gtk.Menu menu;
 
         private const Gtk.TargetEntry[] targets = {
             {"text/uri-list",0,0}
@@ -143,12 +144,33 @@ namespace HashIt {
             hash_result.use_markup = true;
             hash_result.xalign = 0.5f;
 
+            var event_box = new Gtk.EventBox ();
+            event_box.button_press_event.connect (show_context_menu);
+            event_box.add (hash_result);
+
+            menu = new Gtk.Menu ();
+            var menu_copy = new Gtk.MenuItem.with_label (_("Copy result…"));
+            menu_copy.activate.connect (() => {
+                Gtk.Clipboard.get_default (Gdk.Display.get_default ()).set_text (this.hash_result.label, -1);
+            });
+
+            menu.append (menu_copy);
+            menu.show_all ();
+
             content.attach (reference_hash, 0, 1);
-            content.attach (hash_result, 0, 0);
+            content.attach (event_box, 0, 0);
 
             this.add (content);
             this.show_all ();
             open_file.grab_focus ();
+        }
+
+        private bool show_context_menu (Gtk.Widget sender, Gdk.EventButton evt) {
+            if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3 && selected_file != null) {
+                menu.popup (null, null, null, evt.button, evt.time);
+                return true;
+            }
+            return false;
         }
 
         private void check_equal () {
