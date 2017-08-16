@@ -1,0 +1,33 @@
+{
+  "name" : "com.github.artemanufrij.hashit",
+  "projectDirectory" : "/home/artem/Projekte/elementary/hashit",
+  "projectType" : 1,
+  "version" : "",
+  "executablePath" : "",
+  "packages" : [
+    "granite",
+    "gtk+-3.0"
+  ],
+  "sources" : [
+    "/home/artem/Projekte/elementary/hashit/src/com.github.artemanufrij.hashit",
+    "/home/artem/Projekte/elementary/hashit/src/MainWindow.vala",
+    "/home/artem/Projekte/elementary/hashit/src/Application.vala"
+  ],
+  "dependencies" : [
+    "granite"
+  ],
+  "valaOptions" : [
+    "vapidir=",
+    "vapi",
+    "target-glib=2.32",
+    "thread"
+  ],
+  "buildSystem" : {
+    "prebuildCmd" : "cmake .. -DCMAKE_INSTALL_PREFIX=/usr",
+    "buildCmd" : "make",
+    "installCmd" : "",
+    "runCmd" : "./src/com.github.artemanufrij.hashit"
+  },
+  "debugSystem" : {
+  }
+}

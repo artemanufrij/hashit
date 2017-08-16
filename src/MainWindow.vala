@@ -40,6 +40,10 @@ namespace HashIt {
         Gtk.Spinner hash_waiting;
         Gtk.HeaderBar headerbar;
 
+        private const Gtk.TargetEntry[] targets = {
+            {"text/uri-list",0,0}
+        };
+
         File _selected_file = null;
         public File selected_file {
             get {
@@ -77,6 +81,18 @@ namespace HashIt {
                 hash_chooser.sensitive = true;
                 open_file.sensitive = true;
                 check_equal ();
+            });
+
+            Gtk.drag_dest_set (this, Gtk.DestDefaults.ALL, targets, Gdk.DragAction.LINK);
+
+            drag_motion.connect ((context, x, y, time) => {
+                Gtk.drag_unhighlight (this);
+                return true;
+            });
+            drag_data_received.connect ((drag_context, x, y, data, info, time) => {
+                if (data.get_uris ().length > 0) {
+                    selected_file = File.new_for_uri (data.get_uris () [0]);
+                }
             });
 
             present ();
@@ -197,16 +213,16 @@ namespace HashIt {
 
             ThreadFunc<void*> run = () => {
                 Checksum checksum = new Checksum (checksumtype);
-	            FileStream stream = FileStream.open (selected_file.get_path (), "r");
-	            uint8 fbuf[100];
-	            size_t size;
+                FileStream stream = FileStream.open (selected_file.get_path (), "r");
+                uint8 fbuf[100];
+                size_t size;
 
-	            while ((size = stream.read (fbuf)) > 0) {
-		            checksum.update (fbuf, size);
-	            }
-	            digest = checksum.get_string ();
-	            Idle.add ((owned) callback);
-	            return null;
+                while ((size = stream.read (fbuf)) > 0) {
+                    checksum.update (fbuf, size);
+                }
+                digest = checksum.get_string ();
+                Idle.add ((owned) callback);
+                return null;
             };
             try {
                 new Thread<void*>.try (null, run);
