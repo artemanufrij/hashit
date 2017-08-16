@@ -40,9 +40,9 @@ namespace HashIt {
         }
 
         construct {
-            program_name = "Hash Me";
-            exec_name = "com.github.artemanufrij.hashme";
-            application_id = "com.github.artemanufrij.hashme";
+            program_name = "Hash It";
+            exec_name = "com.github.artemanufrij.hashit";
+            application_id = "com.github.artemanufrij.hashit";
             app_launcher = application_id + ".desktop";
             this.flags |= GLib.ApplicationFlags.HANDLES_OPEN;
         }
