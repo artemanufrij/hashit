@@ -114,6 +114,29 @@
        x2="15.823223"
        y2="1024.5389"
        gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4173"
+       id="radialGradient4179"
+       cx="16"
+       cy="-2.8"
+       fx="16"
+       fy="-2.8"
+       r="14"
+       gradientTransform="matrix(0.92857143,0,0,0.71428572,1.1428593,4.9999997)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4173">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.4"
+         offset="0"
+         id="stop4175" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1"
+         id="stop4177" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -123,10 +146,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313708"
-     inkscape:cx="-13.530917"
+     inkscape:cx="-22.413946"
      inkscape:cy="0.85278207"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showgrid="false"
      units="px"
      inkscape:window-width="1640"
@@ -213,5 +236,19 @@
          id="path4188"
          inkscape:connector-curvature="0" />
     </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Spot">
+    <rect
+       style="fill:url(#radialGradient4179);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3371"
+       width="26"
+       height="10"
+       x="3"
+       y="3"
+       rx="2"
+       ry="2" />
   </g>
 </svg>

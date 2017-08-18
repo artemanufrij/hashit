@@ -88,7 +88,7 @@
        x2="24"
        y2="1009"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-0.5,-0.50006474)" />
+       gradientTransform="translate(-0.5,-1.5000863)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4152"
@@ -98,7 +98,7 @@
        y1="1030"
        x2="24"
        y2="1009"
-       gradientTransform="matrix(1.027027,0,0,1.027027,-0.64864866,-26.779972)" />
+       gradientTransform="matrix(1.027027,0,0,1.027027,-0.64864866,-27.779994)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4160"
@@ -108,7 +108,7 @@
        x2="24.03125"
        y2="1010"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0285714,0,0,1.0285714,-0.68571429,-29.381797)" />
+       gradientTransform="matrix(1.0285714,0,0,1.0285714,-0.68571429,-30.381819)" />
     <filter
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
@@ -182,7 +182,7 @@
        fx="40"
        fy="44"
        r="2.5"
-       gradientTransform="matrix(2.4,0,0,1,-56,-0.49999709)"
+       gradientTransform="matrix(2.4,0,0,1,-56,0.50000291)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -194,9 +194,9 @@
        fy="41.5"
        r="2.5"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-2.4,0,0,-1,27.2,85.000002)" />
+       gradientTransform="matrix(-2.4,0,0,-1,27.2,86.000002)" />
     <linearGradient
-       gradientTransform="translate(5.5971908e-8,3.9091797e-6)"
+       gradientTransform="translate(5.5971908e-8,1.0000039)"
        inkscape:collect="always"
        xlink:href="#linearGradient4172"
        id="linearGradient4178"
@@ -253,13 +253,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="25.579589"
+     inkscape:cx="9.860839"
      inkscape:cy="23.442047"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="false"
      units="px"
-     inkscape:window-width="1173"
+     inkscape:window-width="1695"
      inkscape:window-height="1332"
      inkscape:window-x="959"
      inkscape:window-y="75"
@@ -281,26 +281,26 @@
      id="layer3"
      inkscape:label="Shadow">
     <rect
-       style="fill:url(#linearGradient4178);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:1"
+       style="opacity:1;fill:url(#linearGradient4178);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect3370"
        width="32"
        height="5"
        x="8"
-       y="41" />
+       y="42" />
     <rect
-       style="fill:url(#radialGradient4235);fill-opacity:1;stroke:none;opacity:1"
+       style="opacity:1;fill:url(#radialGradient4235);fill-opacity:1;stroke:none"
        id="rect4227"
        width="6"
        height="5"
        x="2"
-       y="41" />
+       y="42" />
     <rect
        style="opacity:1;fill:url(#radialGradient4245);fill-opacity:1;stroke:none"
        id="rect4237"
        width="6"
        height="5"
        x="40"
-       y="41" />
+       y="42" />
   </g>
   <g
      inkscape:label="Layer 1"
@@ -311,37 +311,37 @@
     <rect
        style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
        id="rect4136"
-       width="40"
-       height="40"
-       x="4"
-       y="1008.3621"
+       width="42"
+       height="42"
+       x="3"
+       y="1007.3621"
        rx="3"
        ry="3" />
     <rect
        ry="2.5"
        rx="2.5"
-       y="1008.8621"
-       x="4.5"
-       height="39"
-       width="39"
+       y="1007.8621"
+       x="3.5"
+       height="41"
+       width="41"
        id="rect4138"
        style="opacity:1;fill:none;fill-opacity:1;stroke:url(#linearGradient4146);stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:url(#linearGradient4150);stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4148"
-       width="37"
-       height="37"
-       x="5.5"
-       y="1009.8621"
+       width="39"
+       height="39"
+       x="4.5"
+       y="1008.8621"
        rx="1.5"
        ry="1.5" />
     <rect
        ry="1"
        rx="1"
-       y="1010.3621"
-       x="6"
-       height="36"
-       width="36"
+       y="1009.3621"
+       x="5"
+       height="38"
+       width="38"
        id="rect4158"
        style="opacity:1;fill:url(#linearGradient4166);fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
@@ -377,6 +377,6 @@
        height="14"
        x="4"
        y="4"
-       ry="3" />
+       ry="2" />
   </g>
 </svg>
