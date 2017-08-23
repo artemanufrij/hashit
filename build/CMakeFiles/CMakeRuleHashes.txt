@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-beea3e01601563b90403f02bb4840b34 src/MainWindow.c
-0033826c4938d84d00df90793423338e src/com.github.artemanufrij.hashit_valac.stamp
