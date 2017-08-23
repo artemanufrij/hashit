@@ -166,7 +166,7 @@ namespace HashIt {
         }
 
         private bool show_context_menu (Gtk.Widget sender, Gdk.EventButton evt) {
-            if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3 && selected_file != null && !hash_waiting.active) {
+            if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3 && selected_file != null) {
                 menu.popup (null, null, null, evt.button, evt.time);
                 return true;
             }
