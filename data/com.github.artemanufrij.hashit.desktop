@@ -2,6 +2,7 @@
 Name=Hash It
 GenericName=Hash It
 Comment=Print or check usual checksums
+Comment[lt]=Išvesti ar tikrinti įprastas kontrolines sumas
 Keywords=hash;checksum;md5;sha256;
 Exec=com.github.artemanufrij.hashit %U
 Icon=artemanufrij.hashit
