@@ -3,3 +3,39 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../src/MainWindow.vala:71
+msgid "Calculating checksum…"
+msgstr "Počítá se kontrolní součet…"
+
+#: ../src/MainWindow.vala:93
+msgid "Hash It"
+msgstr "Hash It"
+
+#: ../src/MainWindow.vala:97
+msgid "Open a file"
+msgstr "Otevřít soubor"
+
+#: ../src/MainWindow.vala:108
+msgid "Choose an algorithm"
+msgstr "Vyberte algoritmus"
+
+#: ../src/MainWindow.vala:119
+msgid "(optional) paste a reference hash here…"
+msgstr "(volitelné) vložte vzorový kontrolní součet zde…"
+
+#: ../src/MainWindow.vala:124
+msgid "Choose a file…"
+msgstr "Vyberte soubor…"
+
+#: ../src/MainWindow.vala:157
+msgid "Open"
+msgstr "Otevřít"
+
+#: ../src/MainWindow.vala:159
+msgid "_Cancel"
+msgstr "_Zrušit"
+
+#: ../src/MainWindow.vala:160
+msgid "_Open"
+msgstr "_Otevřít"
