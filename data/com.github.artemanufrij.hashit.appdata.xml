@@ -33,4 +33,14 @@
             <image>https://raw.githubusercontent.com/artemanufrij/hashit/master/Screenshot.png</image>
         </screenshot>
     </screenshots>
+    <releases>
+        <release version="0.1.5" date="2017-11-5">
+            <description>
+                <p>Translation:</p>
+                <ul>
+                    <li>Czech (by Daniel Zvir)</li>
+                </ul>
+            </description>
+        </release>
+    </releases>
 </component>
