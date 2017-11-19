@@ -36,6 +36,15 @@
     <releases>
         <release version="0.1.5" date="2017-11-5">
             <description>
+                <p>New:</p>
+                <ul>
+                    <li>Flat style</li>
+                    <li>Icon</li>
+                </ul>
+            </description>
+        </release>
+        <release version="0.1.5" date="2017-11-5">
+            <description>
                 <p>Translation:</p>
                 <ul>
                     <li>Czech (by Daniel Zvir)</li>

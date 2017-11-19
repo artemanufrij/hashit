@@ -108,6 +108,7 @@ namespace HashIt {
             headerbar = new Gtk.HeaderBar ();
             headerbar.show_close_button = true;
             headerbar.title = _("Hash It");
+            headerbar.get_style_context ().add_class("flat");
             this.set_titlebar (headerbar);
 
             open_file = new Gtk.Button.from_icon_name ("document-open", Gtk.IconSize.LARGE_TOOLBAR);
@@ -198,6 +199,11 @@ namespace HashIt {
                 Gtk.FileChooserAction.OPEN,
                 _("_Cancel"), Gtk.ResponseType.CANCEL,
                 _("_Open"), Gtk.ResponseType.ACCEPT);
+
+            var filter = new Gtk.FileFilter ();
+            filter.set_filter_name (_("All files"));
+            filter.add_pattern ("*");
+            file.add_filter (filter);
 
             if (file.run () == Gtk.ResponseType.ACCEPT) {
                 selected_file = file.get_file ();
