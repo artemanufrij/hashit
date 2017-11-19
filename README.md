@@ -10,3 +10,6 @@ Supported algorithms:
 * MD5
 * SHA256
 * SHA1
+
+## Donations
+If you liked _HashIt_, and would like to support it's development of this app and more, consider [buying me a coffee](https://www.paypal.me/ArtemAnufrij) :)
