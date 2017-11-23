@@ -1,10 +1,16 @@
-# Hash It
-
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.artemanufrij.hashit)
-
-### A simple app for checking usual checksums designed for [elementary OS](https://elementary.io)
-
-![screenshot](Screenshot.png)
+<div>
+  <h1 align="center">Hash It</h1>
+  <h3 align="center">A simple app for checking usual checksums</h3>
+  <p align="center">Designed for <a href="https://elementary.io"> elementary OS</p>
+</div>
+<p align="center">
+  <a href="https://appcenter.elementary.io/com.github.artemanufrij.hashit">
+    <img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter">
+  </a>
+</p>
+<p align="center">
+  <img src="Screenshot.png"/>
+</p>
 
 Supported algorithms:
 * MD5
