@@ -141,7 +141,7 @@ namespace HashIt {
                  check_equal ();
             });
 
-            hash_result = new Gtk.Label (("<i>%s</i>").printf(_("Choose a file…")));
+            hash_result = new Gtk.Label (("<i>%s</i>").printf(_("Choose a file or drag one onto this window…")));
             hash_result.use_markup = true;
             hash_result.xalign = 0.5f;
 
@@ -167,7 +167,10 @@ namespace HashIt {
         }
 
         private bool show_context_menu (Gtk.Widget sender, Gdk.EventButton evt) {
-            if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3 && selected_file != null && !hash_waiting.active) {
+            if (evt.button == 1 && open_file.sensitive) {
+                open_file_dialog ();
+                return true;
+            } else if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3 && selected_file != null && !hash_waiting.active) {
                 menu.popup (null, null, null, evt.button, evt.time);
                 return true;
             }
