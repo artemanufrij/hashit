@@ -1,15 +1,22 @@
-# Hash It
+<div>
+  <h1 align="center">Hash It</h1>
+  <h3 align="center">A simple app for checking usual checksums</h3>
+  <p align="center">Designed for <a href="https://elementary.io">elementary OS</p>
+</div>
 
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.artemanufrij.hashit)
+### Donate
+<a href="https://www.paypal.me/ArtemAnufrij">PayPal</a> | <a href="https://liberapay.com/Artem/donate">LiberaPay</a> | <a href="https://www.patreon.com/ArtemAnufrij">Patreon</a>
 
-### A simple app for checking usual checksums designed for [elementary OS](https://elementary.io)
-
-![screenshot](Screenshot.png)
+<p align="center">
+  <a href="https://appcenter.elementary.io/com.github.artemanufrij.hashit">
+    <img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter">
+  </a>
+</p>
+<p align="center">
+  <img src="Screenshot.png"/>
+</p>
 
 Supported algorithms:
 * MD5
 * SHA256
 * SHA1
-
-## Donations
-If you liked _HashIt_, and would like to support it's development of this app and more, consider [buying me a coffee](https://www.paypal.me/ArtemAnufrij) :)
