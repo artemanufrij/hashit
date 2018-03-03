@@ -36,6 +36,14 @@
     <releases>
         <release version="0.1.10" date="2018-02-30">
             <description>
+                <p>Fix:</p>
+                <ul>
+                    <li>ignore case insensitive for equal result and reference</li>
+                </ul>
+            </description>
+        </release>
+        <release version="0.1.10" date="2018-02-30">
+            <description>
                 <p>Translation:</p>
                 <ul>
                     <li>Polish (by DanyGee)</li>

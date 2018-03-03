@@ -178,8 +178,8 @@ namespace HashIt {
         }
 
         private void check_equal () {
-            string reference = reference_hash.text;
-            string result = hash_result.label;
+            string reference = reference_hash.text.down ();
+            string result = hash_result.label.down ();
 
             reference_hash.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, null);
 
