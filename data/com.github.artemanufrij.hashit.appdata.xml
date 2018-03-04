@@ -10,7 +10,7 @@
         <p>A tool that allows you to ensure the integrity of files.</p>
         <ul>
             <li>Verify files with a reference hash to ensure the integrity of files</li>
-            <li>Generate file hashes to allow others to verify your files</li>
+            <li>Generate file hashes to allow yourself and others to verify files</li>
             <li>Supports SHA256, SHA1 and MD5 algorithms</li>
         </ul>
     </description>
