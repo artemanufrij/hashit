@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Hash It
 GenericName=Hash It
-Comment=Print or check usual checksums
+Comment=Generate and verify file hashes
 Comment[lt]=Išvesti ar tikrinti įprastas kontrolines sumas
 Comment[pl]=Sprawdzaj sumy kontrolne
 Keywords=hash;checksum;md5;sha256;
