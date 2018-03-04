@@ -7,10 +7,10 @@
     <name>Hash It</name>
     <summary>Generate and verify file hashes</summary>
     <description>
-        <p>A tool that allows you to ensure the integrity of files.</p>
+        <p>A tool that allows you to ensure a file hasn't become corrupted.</p>
         <ul>
             <li>Verify files with a reference hash to ensure the integrity of files</li>
-            <li>Generate file hashes to allow yourself and others to verify files</li>
+            <li>Generate file hashes to allow yourself and others to verify file integrity</li>
             <li>Supports SHA256, SHA1 and MD5 algorithms</li>
         </ul>
     </description>
