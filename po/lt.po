@@ -7,49 +7,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-28 12:25+0300\n"
-"PO-Revision-Date: 2017-08-28 12:30+0300\n"
+"POT-Creation-Date: 2018-03-06 11:48+0200\n"
+"PO-Revision-Date: 2018-03-06 11:49+0200\n"
+"Last-Translator: Moo\n"
 "Language-Team: \n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.7.1\n"
-"Last-Translator: Moo\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../src/MainWindow.vala:71
+#: ../src/MainWindow.vala:76
 msgid "Calculating checksum…"
 msgstr "Skaičiuojama kontrolinė suma…"
 
-#: ../src/MainWindow.vala:93
+#: ../src/MainWindow.vala:110
 msgid "Hash It"
 msgstr "Hash It"
 
-#: ../src/MainWindow.vala:97
+#: ../src/MainWindow.vala:115
 msgid "Open a file"
 msgstr "Atverti failą"
 
-#: ../src/MainWindow.vala:108
+#: ../src/MainWindow.vala:126
 msgid "Choose an algorithm"
 msgstr "Pasirinkite algoritmą"
 
-#: ../src/MainWindow.vala:119
+#: ../src/MainWindow.vala:139
 msgid "(optional) paste a reference hash here…"
 msgstr "(nebūtina) čia įdėkite nurodomąją maišą…"
 
-#: ../src/MainWindow.vala:124
-msgid "Choose a file…"
-msgstr "Pasirinkite failą…"
+#: ../src/MainWindow.vala:144
+msgid "Choose a file or drag one onto this window…"
+msgstr "Pasirinkite failą ir vilkite jį į šį langą…"
 
-#: ../src/MainWindow.vala:157
+#: ../src/MainWindow.vala:153
+msgid "Copy result…"
+msgstr "Kopijuoti rezultatą…"
+
+#: ../src/MainWindow.vala:201
 msgid "Open"
 msgstr "Atverti"
 
-#: ../src/MainWindow.vala:159
+#: ../src/MainWindow.vala:203
 msgid "_Cancel"
 msgstr "_Atsisakyti"
 
-#: ../src/MainWindow.vala:160
+#: ../src/MainWindow.vala:204
 msgid "_Open"
 msgstr "A_tverti"
+
+#: ../src/MainWindow.vala:207
+msgid "All files"
+msgstr "Visi failai"
+
+#~ msgid "Choose a file…"
+#~ msgstr "Pasirinkite failą…"
