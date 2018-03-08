@@ -5,14 +5,13 @@
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0+</project_license>
     <name>Hash It</name>
-    <summary>A simple app for check usual checksums</summary>
+    <summary>Generate and verify file hashes</summary>
     <description>
-        <p>Check usual checksum of any files.</p>
-        <p>Supported algorithms:</p>
+        <p>A tool that allows you to ensure a file hasn't become corrupted.</p>
         <ul>
-            <li>MD5</li>
-            <li>SHA256</li>
-            <li>SHA1</li>
+            <li>Verify files with a reference hash to ensure the integrity of files</li>
+            <li>Generate file hashes to allow yourself and others to verify file integrity</li>
+            <li>Supports SHA256, SHA1 and MD5 algorithms</li>
         </ul>
     </description>
     <categories>
