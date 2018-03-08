@@ -109,6 +109,7 @@ namespace HashIt {
             headerbar.show_close_button = true;
             headerbar.title = _("Hash It");
             headerbar.get_style_context ().add_class("flat");
+            headerbar.get_style_context ().add_class ("default-decoration");
             this.set_titlebar (headerbar);
 
             open_file = new Gtk.Button.from_icon_name ("document-open", Gtk.IconSize.LARGE_TOOLBAR);
