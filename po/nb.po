@@ -1,5 +1,63 @@
+# Norwegian Bokmål translation of Hash It.
+# Copyright (C) 2017 Artem Anufrij <artem.anufrij@live.de>
+# This file is distributed under the same license as the Hash It package.
+# Harald H. <harald@fsfe.org>, 2018.
+#
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-11 15:30+0100\n"
+"PO-Revision-Date: 2018-03-11 15:38+0100\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: Harald H. <harald@fsfe.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nb\n"
+
+#: ../src/MainWindow.vala:76
+msgid "Calculating checksum…"
+msgstr "Kalkulerer sjekksum ..."
+
+#: ../src/MainWindow.vala:110
+msgid "Hash It"
+msgstr "Hash den"
+
+#: ../src/MainWindow.vala:115
+msgid "Open a file"
+msgstr "Åpne en fil"
+
+#: ../src/MainWindow.vala:126
+msgid "Choose an algorithm"
+msgstr "Velg en algoritme"
+
+#: ../src/MainWindow.vala:139
+msgid "(optional) paste a reference hash here…"
+msgstr "(valgfritt) lim inn en hash-referanse her ..."
+
+#: ../src/MainWindow.vala:144
+msgid "Choose a file or drag one onto this window…"
+msgstr "Velg eller dra en fil over i dette vinduet ..."
+
+#: ../src/MainWindow.vala:153
+msgid "Copy result…"
+msgstr "Kopier resultat ..."
+
+#: ../src/MainWindow.vala:201
+msgid "Open"
+msgstr "Åpne"
+
+#: ../src/MainWindow.vala:203
+msgid "_Cancel"
+msgstr "_Avbryt"
+
+#: ../src/MainWindow.vala:204
+msgid "_Open"
+msgstr "_Åpne"
+
+#: ../src/MainWindow.vala:207
+msgid "All files"
+msgstr "Alle filer"
