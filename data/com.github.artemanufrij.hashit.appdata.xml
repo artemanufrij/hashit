@@ -33,6 +33,18 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="0.1.11" date="2018-03-30">
+            <description>
+                <p>Improved:</p>
+                <ul>
+                    <li>Some descriptions (by aljelly)</li>
+                </ul>
+                <p>Translation:</p>
+                <ul>
+                    <li>Lithuanian (by welaq)</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.1.10" date="2018-03-05">
             <description>
                 <p>Fix:</p>
