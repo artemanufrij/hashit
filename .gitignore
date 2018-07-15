@@ -1,0 +1,38 @@
+
+# Created by https://www.gitignore.io/api/cmake,ninja,linux
+
+### Compiler ###
+build
+
+### CMake ###
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### Ninja ###
+.ninja_deps
+.ninja_log
+
+
+# End of https://www.gitignore.io/api/cmake,ninja,linux
