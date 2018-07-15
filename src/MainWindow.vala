@@ -186,7 +186,7 @@ namespace HashIt {
 
             if (reference != "" && result != "") {
                 if (reference != result) {
-                    reference_hash.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-error");
+                    reference_hash.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-stop");
                 } else {
                     reference_hash.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "process-completed");
                 }
