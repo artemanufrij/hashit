@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the com.github.artemanufrij.hashit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: com.github.artemanufrij.hashit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-23 23:17+0100\n"
+"POT-Creation-Date: 2018-07-18 21:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,46 +17,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/MainWindow.vala:76
+#: src/MainWindow.vala:76
 msgid "Calculating checksum…"
 msgstr ""
 
-#: ../src/MainWindow.vala:110
+#: src/MainWindow.vala:110 data/com.github.artemanufrij.hashit.desktop.in:3
+#: data/com.github.artemanufrij.hashit.desktop.in:4
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:7
 msgid "Hash It"
 msgstr ""
 
-#: ../src/MainWindow.vala:115
+#: src/MainWindow.vala:116
 msgid "Open a file"
 msgstr ""
 
-#: ../src/MainWindow.vala:126
+#: src/MainWindow.vala:127
 msgid "Choose an algorithm"
 msgstr ""
 
-#: ../src/MainWindow.vala:139
+#: src/MainWindow.vala:140
 msgid "(optional) paste a reference hash here…"
 msgstr ""
 
-#: ../src/MainWindow.vala:144
+#: src/MainWindow.vala:145
 msgid "Choose a file or drag one onto this window…"
 msgstr ""
 
-#: ../src/MainWindow.vala:153
+#: src/MainWindow.vala:154
 msgid "Copy result…"
 msgstr ""
 
-#: ../src/MainWindow.vala:201
+#: src/MainWindow.vala:202
 msgid "Open"
 msgstr ""
 
-#: ../src/MainWindow.vala:203
+#: src/MainWindow.vala:204
 msgid "_Cancel"
 msgstr ""
 
-#: ../src/MainWindow.vala:204
+#: src/MainWindow.vala:205
 msgid "_Open"
 msgstr ""
 
-#: ../src/MainWindow.vala:207
+#: src/MainWindow.vala:208
 msgid "All files"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.desktop.in:5
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:8
+msgid "Generate and verify file hashes"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.desktop.in:8
+msgid "hash;checksum;md5;sha256;"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.desktop.in:10
+msgid "com.github.artemanufrij.hashit"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:10
+msgid "A tool that allows you to ensure a file hasn't become corrupted."
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:12
+msgid "Verify files with a reference hash to ensure the integrity of files"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:13
+msgid ""
+"Generate file hashes to allow yourself and others to verify file integrity"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:14
+msgid "Supports SHA256, SHA1 and MD5 algorithms"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:25
+msgid "Artem Anufrij"
 msgstr ""
