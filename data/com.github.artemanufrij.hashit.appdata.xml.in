@@ -33,6 +33,15 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="0.2.0" date="2018-07-24">
+            <description>
+                Prepare for JUNO
+                <p>Translation:</p>
+                <ul>
+                    <li>Norwegian Bokmål (by Harald H)</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.1.11" date="2018-03-30">
             <description>
                 <p>Improved:</p>
