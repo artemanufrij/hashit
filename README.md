@@ -1,6 +1,6 @@
 <div>
   <h1 align="center">Hash It</h1>
-  <h3 align="center"><img src="data/icons/com.github.artemanufrij.hashit.svg"/><br>A simple app for checking usual checksums</h3>
+  <h3 align="center"><img src="data/icons/64/com.github.artemanufrij.hashit.svg"/><br>A simple app for checking usual checksums</h3>
   <p align="center">Designed for <a href="https://elementary.io">elementary OS</p>
 </div>
 
