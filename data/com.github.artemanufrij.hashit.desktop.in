@@ -2,8 +2,6 @@
 Name=Hash It
 GenericName=Hash It
 Comment=Generate and verify file hashes
-Comment[lt]=Išvesti ar tikrinti įprastas kontrolines sumas
-Comment[pl]=Sprawdzaj sumy kontrolne
 Keywords=hash;checksum;md5;sha256;
 Exec=com.github.artemanufrij.hashit %U
 Icon=com.github.artemanufrij.hashit
