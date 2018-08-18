@@ -1,6 +1,6 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: com.github.artemanufrij.imageburner
-Source: https://github.com/artemanufrij/imageburnder
+Upstream-Name: com.github.artemanufrij.hashit
+Source: https://github.com/artemanufrij/hashit
 
 Files: *
 Copyright: Artem Anufrij
@@ -22,4 +22,3 @@ License: GPL-3.0+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
-
