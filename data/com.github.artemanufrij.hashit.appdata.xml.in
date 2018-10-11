@@ -7,7 +7,7 @@
     <name>Hash It</name>
     <summary>Generate and verify file hashes</summary>
     <description>
-        <p>A tool that allows you to ensure a file hasn't become corrupted.</p>
+        <p>A tool that allows you to ensure a file hasn't become corrupted by comparing its hashsum</p>
         <ul>
             <li>Verify files with a reference hash to ensure the integrity of files</li>
             <li>Generate file hashes to allow yourself and others to verify file integrity</li>
