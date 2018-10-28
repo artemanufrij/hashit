@@ -39,11 +39,8 @@ i18n.merge_file(
 )
 
 #Install our .contract file so Files will see it
-i18n.merge_file(
-    input: join_paths('data', meson.project_name() + '.contract.in'),
-    output: meson.project_name() + '.contract',
-    po_dir: join_paths(meson.source_root(), 'po'),
-    install: true,
+install_data(
+    join_paths('data', meson.project_name() + '.contract'),
     install_dir: join_paths(get_option('datadir'), 'contractor')
 )
 

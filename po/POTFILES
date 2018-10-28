@@ -2,4 +2,3 @@ src/MainWindow.vala
 src/Application.vala
 data/com.github.artemanufrij.hashit.desktop.in
 data/com.github.artemanufrij.hashit.appdata.xml.in
-data/com.github.artemanufrij.hashit.contract.in
