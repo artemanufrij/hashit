@@ -1,5 +1,6 @@
 [Contractor Entry]
 Name=Show checksum
+Name[de]=Checksumme ansehen
 Icon=com.github.artemanufrij.hashit
 Description=Shows checksum for a choosen file
 Exec=com.github.artemanufrij.hashit %U
