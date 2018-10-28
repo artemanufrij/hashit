@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 21:12+0200\n"
+"POT-Creation-Date: 2018-10-28 10:48+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <vistausss@outlook.com>\n"
@@ -23,39 +23,39 @@ msgstr "Bezig met berekenen van controlesom…"
 msgid "Hash It"
 msgstr "Hash It"
 
-#: src/MainWindow.vala:116
+#: src/MainWindow.vala:115
 msgid "Open a file"
 msgstr "Bestand openen"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:126
 msgid "Choose an algorithm"
 msgstr "Kies een algoritme"
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:139
 msgid "(optional) paste a reference hash here…"
 msgstr "Plak een referentiehash hier (optioneel)…"
 
-#: src/MainWindow.vala:145
+#: src/MainWindow.vala:144
 msgid "Choose a file or drag one onto this window…"
 msgstr "Kies een bestand of sleep een bestand hierheen…"
 
-#: src/MainWindow.vala:154
+#: src/MainWindow.vala:153
 msgid "Copy result…"
 msgstr "Resultaat kopiëren…"
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:201
 msgid "Open"
 msgstr "Openen"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:203
 msgid "_Cancel"
 msgstr "_Annuleren"
 
-#: src/MainWindow.vala:205
+#: src/MainWindow.vala:204
 msgid "_Open"
 msgstr "_Openen"
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:207
 msgid "All files"
 msgstr "Alle bestanden"
 
@@ -64,25 +64,35 @@ msgstr "Alle bestanden"
 msgid "Generate and verify file hashes"
 msgstr "Bestandshashes genereren en verifiëren"
 
-#: data/com.github.artemanufrij.hashit.desktop.in:8
+#: data/com.github.artemanufrij.hashit.desktop.in:6
 msgid "hash;checksum;md5;sha256;"
 msgstr "hash;controlesom;md5;sha256;"
 
-#: data/com.github.artemanufrij.hashit.desktop.in:10
+#: data/com.github.artemanufrij.hashit.desktop.in:8
 msgid "com.github.artemanufrij.hashit"
 msgstr "com.github.artemanufrij.hashit"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:10
-msgid "A tool that allows you to ensure a file hasn't become corrupted."
-msgstr "Een hulpmiddel dat je help vast te stellen dat een bestand niet corrupt is geraakt."
+#, fuzzy
+msgid ""
+"A tool that allows you to ensure a file hasn't become corrupted by comparing "
+"its hashsum"
+msgstr ""
+"Een hulpmiddel dat je help vast te stellen dat een bestand niet corrupt is "
+"geraakt."
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:12
 msgid "Verify files with a reference hash to ensure the integrity of files"
-msgstr "Verifieer bestanden met een referentiehash om de integriteit van je bestanden te verzekeren"
+msgstr ""
+"Verifieer bestanden met een referentiehash om de integriteit van je "
+"bestanden te verzekeren"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:13
-msgid "Generate file hashes to allow yourself and others to verify file integrity"
-msgstr "Genereer bestandshashes om jezelf en anderen te verzekeren van integere bestanden"
+msgid ""
+"Generate file hashes to allow yourself and others to verify file integrity"
+msgstr ""
+"Genereer bestandshashes om jezelf en anderen te verzekeren van integere "
+"bestanden"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:14
 msgid "Supports SHA256, SHA1 and MD5 algorithms"

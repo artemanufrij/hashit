@@ -7,57 +7,95 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-11 15:30+0100\n"
+"POT-Creation-Date: 2018-10-28 10:48+0100\n"
 "PO-Revision-Date: 2018-03-11 15:38+0100\n"
+"Last-Translator: Harald H. <harald@fsfe.org>\n"
 "Language-Team: \n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.7.1\n"
-"Last-Translator: Harald H. <harald@fsfe.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: nb\n"
 
-#: ../src/MainWindow.vala:76
+#: src/MainWindow.vala:76
 msgid "Calculating checksum…"
 msgstr "Kalkulerer sjekksum ..."
 
-#: ../src/MainWindow.vala:110
+#: src/MainWindow.vala:110 data/com.github.artemanufrij.hashit.desktop.in:3
+#: data/com.github.artemanufrij.hashit.desktop.in:4
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:7
 msgid "Hash It"
 msgstr "Hash den"
 
-#: ../src/MainWindow.vala:115
+#: src/MainWindow.vala:115
 msgid "Open a file"
 msgstr "Åpne en fil"
 
-#: ../src/MainWindow.vala:126
+#: src/MainWindow.vala:126
 msgid "Choose an algorithm"
 msgstr "Velg en algoritme"
 
-#: ../src/MainWindow.vala:139
+#: src/MainWindow.vala:139
 msgid "(optional) paste a reference hash here…"
 msgstr "(valgfritt) lim inn en hash-referanse her ..."
 
-#: ../src/MainWindow.vala:144
+#: src/MainWindow.vala:144
 msgid "Choose a file or drag one onto this window…"
 msgstr "Velg eller dra en fil over i dette vinduet ..."
 
-#: ../src/MainWindow.vala:153
+#: src/MainWindow.vala:153
 msgid "Copy result…"
 msgstr "Kopier resultat ..."
 
-#: ../src/MainWindow.vala:201
+#: src/MainWindow.vala:201
 msgid "Open"
 msgstr "Åpne"
 
-#: ../src/MainWindow.vala:203
+#: src/MainWindow.vala:203
 msgid "_Cancel"
 msgstr "_Avbryt"
 
-#: ../src/MainWindow.vala:204
+#: src/MainWindow.vala:204
 msgid "_Open"
 msgstr "_Åpne"
 
-#: ../src/MainWindow.vala:207
+#: src/MainWindow.vala:207
 msgid "All files"
 msgstr "Alle filer"
+
+#: data/com.github.artemanufrij.hashit.desktop.in:5
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:8
+msgid "Generate and verify file hashes"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.desktop.in:6
+msgid "hash;checksum;md5;sha256;"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.desktop.in:8
+msgid "com.github.artemanufrij.hashit"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:10
+msgid ""
+"A tool that allows you to ensure a file hasn't become corrupted by comparing "
+"its hashsum"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:12
+msgid "Verify files with a reference hash to ensure the integrity of files"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:13
+msgid ""
+"Generate file hashes to allow yourself and others to verify file integrity"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:14
+msgid "Supports SHA256, SHA1 and MD5 algorithms"
+msgstr ""
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:25
+msgid "Artem Anufrij"
+msgstr ""
