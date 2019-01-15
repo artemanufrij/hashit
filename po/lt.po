@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 21:12+0200\n"
+"POT-Creation-Date: 2018-10-28 10:48+0100\n"
 "PO-Revision-Date: 2018-08-18 12:58+0300\n"
 "Last-Translator: Moo\n"
 "Language-Team: \n"
@@ -29,39 +29,39 @@ msgstr "Skaičiuojama kontrolinė suma…"
 msgid "Hash It"
 msgstr "Hash It"
 
-#: src/MainWindow.vala:116
+#: src/MainWindow.vala:115
 msgid "Open a file"
 msgstr "Atverti failą"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:126
 msgid "Choose an algorithm"
 msgstr "Pasirinkite algoritmą"
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:139
 msgid "(optional) paste a reference hash here…"
 msgstr "(nebūtina) čia įdėkite nurodomąją maišą…"
 
-#: src/MainWindow.vala:145
+#: src/MainWindow.vala:144
 msgid "Choose a file or drag one onto this window…"
 msgstr "Pasirinkite failą ir vilkite jį į šį langą…"
 
-#: src/MainWindow.vala:154
+#: src/MainWindow.vala:153
 msgid "Copy result…"
 msgstr "Kopijuoti rezultatą…"
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:201
 msgid "Open"
 msgstr "Atverti"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:203
 msgid "_Cancel"
 msgstr "_Atsisakyti"
 
-#: src/MainWindow.vala:205
+#: src/MainWindow.vala:204
 msgid "_Open"
 msgstr "A_tverti"
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:207
 msgid "All files"
 msgstr "Visi failai"
 
@@ -70,16 +70,19 @@ msgstr "Visi failai"
 msgid "Generate and verify file hashes"
 msgstr "Generuoti ir patikrinti failų maišas"
 
-#: data/com.github.artemanufrij.hashit.desktop.in:8
+#: data/com.github.artemanufrij.hashit.desktop.in:6
 msgid "hash;checksum;md5;sha256;"
 msgstr "maiša;kontrolinė suma;md5;sha256;"
 
-#: data/com.github.artemanufrij.hashit.desktop.in:10
+#: data/com.github.artemanufrij.hashit.desktop.in:8
 msgid "com.github.artemanufrij.hashit"
 msgstr "com.github.artemanufrij.hashit"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:10
-msgid "A tool that allows you to ensure a file hasn't become corrupted."
+#, fuzzy
+msgid ""
+"A tool that allows you to ensure a file hasn't become corrupted by comparing "
+"its hashsum"
 msgstr "Įrankis, kuris leidžia užtikrinti, jog failas netapo pažeistas."
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:12
