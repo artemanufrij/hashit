@@ -73,13 +73,12 @@ msgid "com.github.artemanufrij.hashit"
 msgstr "com.github.artemanufrij.hashit"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:10
-#, fuzzy
 msgid ""
 "A tool that allows you to ensure a file hasn't become corrupted by comparing "
 "its hashsum"
 msgstr ""
 "Een hulpmiddel dat je help vast te stellen dat een bestand niet corrupt is "
-"geraakt."
+"geraakt door het vergelijken van de controlesom"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:12
 msgid "Verify files with a reference hash to ensure the integrity of files"
