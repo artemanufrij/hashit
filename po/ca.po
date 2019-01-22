@@ -7,82 +7,83 @@ msgstr ""
 
 #: src/MainWindow.vala:76
 msgid "Calculating checksum…"
-msgstr ""
+msgstr "Calculant checksum…"
 
 #: src/MainWindow.vala:110 data/com.github.artemanufrij.hashit.desktop.in:3
 #: data/com.github.artemanufrij.hashit.desktop.in:4
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:7
 msgid "Hash It"
-msgstr ""
+msgstr "Hash It"
 
 #: src/MainWindow.vala:115
 msgid "Open a file"
-msgstr ""
+msgstr "Obrir un fitxer"
 
 #: src/MainWindow.vala:126
 msgid "Choose an algorithm"
-msgstr ""
+msgstr "Escollir un algorisme"
 
 #: src/MainWindow.vala:139
 msgid "(optional) paste a reference hash here…"
-msgstr ""
+msgstr "(opcional) enganxar un hash de referència aquí…"
 
 #: src/MainWindow.vala:144
 msgid "Choose a file or drag one onto this window…"
-msgstr ""
+msgstr "Escollir un fitxer o arrosegar un en aquesta finestra…"
 
 #: src/MainWindow.vala:153
 msgid "Copy result…"
-msgstr ""
+msgstr "copiar resultat…"
 
 #: src/MainWindow.vala:201
 msgid "Open"
-msgstr ""
+msgstr "Obrir"
 
 #: src/MainWindow.vala:203
 msgid "_Cancel"
-msgstr ""
+msgstr "_Cancel·lar"
 
 #: src/MainWindow.vala:204
 msgid "_Open"
-msgstr ""
+msgstr "_Obrir"
 
 #: src/MainWindow.vala:207
 msgid "All files"
-msgstr ""
+msgstr "Tots els fitxers"
 
 #: data/com.github.artemanufrij.hashit.desktop.in:5
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:8
 msgid "Generate and verify file hashes"
-msgstr ""
+msgstr "Generar i verificar el hash del fitxer"
 
 #: data/com.github.artemanufrij.hashit.desktop.in:6
 msgid "hash;checksum;md5;sha256;"
-msgstr ""
+msgstr "hash;checksum;md5;sha256;"
 
 #: data/com.github.artemanufrij.hashit.desktop.in:8
 msgid "com.github.artemanufrij.hashit"
-msgstr ""
+msgstr "com.github.artemanufrij.hashit"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:10
 msgid ""
 "A tool that allows you to ensure a file hasn't become corrupted by comparing "
 "its hashsum"
-msgstr ""
+msgstr "Una ferramenta que et permet assegurar que un fitxer no està corrupte comparant "
+"el seu hashsum"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:12
 msgid "Verify files with a reference hash to ensure the integrity of files"
-msgstr ""
+msgstr "Verificar fixers amb un hash de referència per assegurar la integritat d'aquestos"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:13
 msgid ""
 "Generate file hashes to allow yourself and others to verify file integrity"
-msgstr ""
+msgstr "Generar hashs de fitxers per permetre a tu i a altres comprovar la integritat d'un fitxer"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:14
 msgid "Supports SHA256, SHA1 and MD5 algorithms"
-msgstr ""
+msgstr "Suporta els algorismes SHA256, SHA1 i MD5"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:25
 msgid "Artem Anufrij"
-msgstr ""
+msgstr "Artem Anufrij"
