@@ -40,7 +40,7 @@ namespace HashIt {
         }
 
         construct {
-            program_name = (_("Hash It");
+            program_name = (_("Hash It"));
             exec_name = "com.github.artemanufrij.hashit";
             application_id = "com.github.artemanufrij.hashit";
             app_launcher = application_id + ".desktop";
