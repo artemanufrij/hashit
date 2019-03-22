@@ -38,7 +38,7 @@ msgstr "Choisir un algorithme"
 
 #: src/MainWindow.vala:139
 msgid "(optional) paste a reference hash here…"
-msgstr "(facultatif) coller un hachage de référence ici…"
+msgstr "(facultatif) collez un hachage de référence ici…"
 
 #: src/MainWindow.vala:144
 msgid "Choose a file or drag one onto this window…"
