@@ -33,6 +33,11 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="1.0.1" date="2019-03-31">
+            <description>
+                <p>Update French (by NathanBnm)</p>
+            </description>
+        </release>
         <release version="1.0.0" date="2018-10-30">
             <description>
                 <p>New:</p>
