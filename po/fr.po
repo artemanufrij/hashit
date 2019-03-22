@@ -1,10 +1,21 @@
+# French translations for com.github.artemanufrij.hashit package.
+# Copyright (C) 2019 THE com.github.artemanufrij.hashit'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.artemanufrij.hashit package.
+# NathanBnnm, 2019.
+#
 msgid ""
 msgstr ""
+"Project-Id-Version: com.github.artemanufrij.hashit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-28 10:48+0100\n"
+"POT-Creation-Date: 2019-03-22 19:14+0100\n"
+"PO-Revision-Date: 2019-03-22 19:22+0100\n"
+"Last-Translator: NathanBnm\n"
+"Language-Team: Français\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Plural-Forms: nplurals=2; plural=n>1;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/MainWindow.vala:76
 msgid "Calculating checksum…"
@@ -70,18 +81,21 @@ msgid ""
 "A tool that allows you to ensure a file hasn't become corrupted by comparing "
 "its hashsum"
 msgstr ""
-"Un outil qui vous permet de vous assurer qu'un fichier n'a pas été corrompu en comparant "
-"sa somme de hachage."
+"Un outil qui vous permet de vous assurer qu'un fichier n'a pas été corrompu "
+"en comparant sa somme de hachage."
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:12
 msgid "Verify files with a reference hash to ensure the integrity of files"
-msgstr "Vérifie les fichiers avec un hachage de référence pour assurer l'intégrité des fichiers"
+msgstr ""
+"Vérifie les fichiers avec un hachage de référence pour assurer l'intégrité "
+"des fichiers"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:13
 msgid ""
 "Generate file hashes to allow yourself and others to verify file integrity"
 msgstr ""
-"Génère des hachages de fichiers pour vous permettre, à vous et aux autres, de vérifier l'intégrité des fichiers."
+"Génère des hachages de fichiers pour vous permettre, à vous et aux autres, "
+"de vérifier l'intégrité des fichiers."
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:14
 msgid "Supports SHA256, SHA1 and MD5 algorithms"
@@ -90,3 +104,70 @@ msgstr "Supporte les algorithmes SHA256, SHA1 et MD5"
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:25
 msgid "Artem Anufrij"
 msgstr "Artem Anufrij"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:38
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:92
+msgid "New:"
+msgstr "Nouveau :"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:40
+msgid "Switch to meson"
+msgstr "Passage à meson"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:42
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:52
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:64
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:76
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:101
+msgid "Translation:"
+msgstr "Traduction :"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:44
+msgid "Dutch (by Heimen Stoffels)"
+msgstr "Néérlandais (par Heimen Stoffels)"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:45
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:66
+msgid "Lithuanian (by welaq)"
+msgstr "Lituanien (par welaq)"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:54
+msgid "Norwegian Bokmål (by Harald H)"
+msgstr "Bokmål norvégien (par Harald H)"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:60
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:84
+msgid "Improved:"
+msgstr "Amélioration :"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:62
+msgid "Some descriptions (by aljelly)"
+msgstr "Quelques descriptions (par aljelly)"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:72
+msgid "Fix:"
+msgstr "Correction :"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:74
+msgid "ignore case insensitive for equal result and reference"
+msgstr "Ignore les majuscules et minuscules pour un résultat et une référence égaux"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:78
+msgid "Polish (by DanyGee)"
+msgstr "Polonais (par DanyGee)"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:86
+msgid "File choosing"
+msgstr "Choix des fichiers"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:94
+msgid "Flat style"
+msgstr "Style Flat"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:95
+msgid "Icon"
+msgstr "Icône"
+
+#: data/com.github.artemanufrij.hashit.appdata.xml.in:103
+msgid "Czech (by Daniel Zvir)"
+msgstr "Tchèque (par Daniel Zvir)"
