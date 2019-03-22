@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.artemanufrij.hashit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-22 19:14+0100\n"
+"POT-Creation-Date: 2019-03-22 19:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,8 @@ msgstr ""
 msgid "Calculating checksum…"
 msgstr ""
 
-#: src/MainWindow.vala:110 data/com.github.artemanufrij.hashit.desktop.in:3
+#: src/MainWindow.vala:110 src/Application.vala:43
+#: data/com.github.artemanufrij.hashit.desktop.in:3
 #: data/com.github.artemanufrij.hashit.desktop.in:4
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:7
 msgid "Hash It"

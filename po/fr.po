@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.artemanufrij.hashit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-22 19:14+0100\n"
+"POT-Creation-Date: 2019-03-22 19:24+0100\n"
 "PO-Revision-Date: 2019-03-22 19:22+0100\n"
 "Last-Translator: NathanBnm\n"
 "Language-Team: Français\n"
@@ -21,7 +21,8 @@ msgstr ""
 msgid "Calculating checksum…"
 msgstr "Calcul de la somme de contrôle…"
 
-#: src/MainWindow.vala:110 data/com.github.artemanufrij.hashit.desktop.in:3
+#: src/MainWindow.vala:110 src/Application.vala:43
+#: data/com.github.artemanufrij.hashit.desktop.in:3
 #: data/com.github.artemanufrij.hashit.desktop.in:4
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:7
 msgid "Hash It"
@@ -150,7 +151,8 @@ msgstr "Correction :"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:74
 msgid "ignore case insensitive for equal result and reference"
-msgstr "Ignore les majuscules et minuscules pour un résultat et une référence égaux"
+msgstr ""
+"Ignore les majuscules et minuscules pour un résultat et une référence égaux"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:78
 msgid "Polish (by DanyGee)"
