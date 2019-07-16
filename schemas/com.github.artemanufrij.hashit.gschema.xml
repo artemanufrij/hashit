@@ -1,0 +1,9 @@
+<schemalist>
+	<schema path="/com/github/artemanufrij/hashit/" id="com.github.artemanufrij.hashit" gettext-domain="com.github.artemanufrij.hashit">
+		<key name="hash" type="s">
+		    <default>"SHA256"</default>
+			<summary>Hash Value.</summary>
+			<description>Hash Value.</description>
+		</key>
+	</schema>
+</schemalist>

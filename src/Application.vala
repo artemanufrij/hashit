@@ -45,6 +45,17 @@ namespace HashIt {
             application_id = "com.github.artemanufrij.hashit";
             app_launcher = application_id + ".desktop";
             this.flags |= GLib.ApplicationFlags.HANDLES_OPEN;
+
+            var action_quit = new SimpleAction ("quit", null);
+            add_action (action_quit);
+            string[] accel_quit = {"<Control>q", "0"};
+            set_accels_for_action ("app.quit", accel_quit);
+            action_quit.activate.connect (
+                () => {
+                    if (mainwindow != null) {
+                        mainwindow.destroy ();
+                    }
+                });
         }
 
         Gtk.Window mainwindow;

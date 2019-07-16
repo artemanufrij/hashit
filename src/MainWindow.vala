@@ -41,6 +41,8 @@ namespace HashIt {
         Gtk.HeaderBar headerbar;
         Gtk.Menu menu;
 
+        Settings settings;
+
         private const Gtk.TargetEntry[] targets = {
             {"text/uri-list",0,0}
         };
@@ -64,6 +66,8 @@ namespace HashIt {
         }
 
         public MainWindow () {
+            settings = Settings.get_default ();
+
             this.resizable = false;
             this.width_request = 660;
 
@@ -122,9 +126,10 @@ namespace HashIt {
             hash_chooser.append ("MD5", "MD5");
             hash_chooser.append ("SHA256", "SHA256");
             hash_chooser.append ("SHA1", "SHA1");
-            hash_chooser.active = 1;
+            hash_chooser.active_id = settings.hash;
             hash_chooser.tooltip_text = _("Choose an algorithm");
             hash_chooser.changed.connect (() => {
+                settings.hash = hash_chooser.active_id;
                 if (selected_file != null) {
                     get_checksum.begin ();
                 }
@@ -217,6 +222,7 @@ namespace HashIt {
         }
 
         private async void get_checksum () {
+            warning(settings.hash);
             calculate_begin ();
             checksum_thread.begin ((obj, res) => {
                 calculate_finished (checksum_thread.end (res));

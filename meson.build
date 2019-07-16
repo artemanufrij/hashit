@@ -12,6 +12,7 @@ executable(
     meson.project_name(),
     'src/Application.vala',
     'src/MainWindow.vala',
+    'src/Settings.vala',
     dependencies: [
         dependency('gtk+-3.0'),
         dependency('granite'),
@@ -54,4 +55,5 @@ foreach i : icon_sizes
 endforeach
 
 subdir('po')
+subdir('schemas')
 meson.add_install_script('meson/post_install.py')
