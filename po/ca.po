@@ -7,7 +7,7 @@ msgstr ""
 
 #: src/MainWindow.vala:76
 msgid "Calculating checksum…"
-msgstr "Calculant checksum…"
+msgstr "S'està calculant la suma de comprovació…"
 
 #: src/MainWindow.vala:110 src/Application.vala:43
 #: data/com.github.artemanufrij.hashit.desktop.in:3
@@ -18,7 +18,7 @@ msgstr "Hash It"
 
 #: src/MainWindow.vala:115
 msgid "Open a file"
-msgstr "Obrir un fitxer"
+msgstr "Obre un fitxer"
 
 #: src/MainWindow.vala:126
 msgid "Choose an algorithm"
@@ -34,7 +34,7 @@ msgstr "Escollir un fitxer o arrosegar un en aquesta finestra…"
 
 #: src/MainWindow.vala:153
 msgid "Copy result…"
-msgstr "copiar resultat…"
+msgstr "Copiar resultat…"
 
 #: src/MainWindow.vala:201
 msgid "Open"
@@ -69,15 +69,12 @@ msgstr "com.github.artemanufrij.hashit"
 msgid ""
 "A tool that allows you to ensure a file hasn't become corrupted by comparing "
 "its hashsum"
-msgstr ""
-"Una ferramenta que et permet assegurar que un fitxer no està corrupte "
-"comparant el seu hashsum"
+msgstr "Una ferramenta que us permet assegurar que un fitxer no està malmès comparant-ne "
+"la suma de comprovació"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:12
 msgid "Verify files with a reference hash to ensure the integrity of files"
-msgstr ""
-"Verificar fixers amb un hash de referència per assegurar la integritat "
-"d'aquestos"
+msgstr "Verificar fitxers amb un hash de referència per assegurar-ne la integritat d'aquestos"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:13
 msgid ""
@@ -88,7 +85,7 @@ msgstr ""
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:14
 msgid "Supports SHA256, SHA1 and MD5 algorithms"
-msgstr "Suporta els algorismes SHA256, SHA1 i MD5"
+msgstr "Admet els algorismes SHA256, SHA1 i MD5"
 
 #: data/com.github.artemanufrij.hashit.appdata.xml.in:25
 msgid "Artem Anufrij"
